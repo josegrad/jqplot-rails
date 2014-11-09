@@ -9443,7 +9443,8 @@
      */
 
     jsDate.prototype.getUtcOffset = function() {
-        return this.proxy.getTimezoneOffset() * 60000;
+        //return this.proxy.getTimezoneOffset() * 60000;
+        return -2 * 60 * 60 * 1000; 
     };
 
     /**
